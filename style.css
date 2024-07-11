@@ -68,10 +68,11 @@ body{
   font-optical-sizing: auto;
   font-weight: 100 700;
   font-style: normal;
+  
 }
 header{
   padding: 2rem;
-/*   width: 200px; */
+  max-width: 100%;
 }
 
 .container{
@@ -81,31 +82,43 @@ header{
   align-items: center;
 
   /* border: 1px solid red; */
-
+  max-width: 100%;
   min-height: 100vh;
+  /* margin-bottom: 1rem; */
+
 }
+
+
 /* left  */
 .left-card{
   /* border: 1px solid brown; */
   display: grid;
   place-content: center;
   gap: 1rem;
-  padding: 2rem 1rem;
-  max-width: 600px;
+  padding: 2rem 2rem;
+  /* max-width: 600px; */
+  /* background-image: linear-gradient( 135deg,  hsl(0, 80%, 86%),  hsl(0, 74%, 74%)); */
 }
 .title{
   text-align: center;
   color: var(--Desaturated-Red);
   text-transform: uppercase;
   letter-spacing: 10px;
-  
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 1rem;
 }
 .title span{
-  color: black;
+  color: #373A40;
+  font-weight: 650;
 }
 .inner-content{
   text-align: center;
-  color: var(--Desaturated-Red)
+  color: var(--Desaturated-Red);
+  /* border: 1px solid salmon; */
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-size: 0.87rem;
 }
 
 .flex-form{
@@ -162,7 +175,7 @@ header{
 /* right */
 .right-card{
   background-image: url(./images/hero-mobile.jpg);
-  background-size: cover;
+  /* background-size: cover; */
 
   height: 250px;
   width: 100%;
@@ -189,7 +202,7 @@ header{
   display: block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     
     header{
       position: absolute;
@@ -222,6 +235,7 @@ header{
     .inner-content{
       text-align: left;
       font-size: 1.1rem;
+    
     }
     
 }
@@ -231,7 +245,8 @@ header{
   .attribution { 
     font-size: 12px; 
     text-align: center; 
+    flex-wrap: wrap;
 }
   .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: #59C1BD; 
 }
